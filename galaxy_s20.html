@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            @keyframes animacion{
+                0%{
+                    background-color: rgb(243, 241, 241);
+                    transform: translateY(0);
+                }
+                50%{
+                    background-color: rgb(255, 255, 255);
+                    transform: translateY(-10px);
+                }
+                100%{
+                    background-color: rgb(246, 246, 246);
+                    transform: translateY(0);
+                }
+            }
+            body{
+                background-color: black;
+                margin: 0; /* Añadir margen 0 para evitar espacios en blanco alrededor del cuerpo de la página */
+            }
+            .navegacion{
+                width: 100%;
+                height: 100%; 
+                position: relative;
+                display: flex;
+            }
+            .titulo{
+                width: 100%; 
+                height: 100%; 
+                position: relative; 
+                background: white;
+                margin-top: 1cm ;
+            }
+            .linia{
+                width: 1248px; 
+                height: 0px; left: 96px; 
+                top: 149px; position: absolute; 
+                box-shadow: 2px 4px 4px rgba(255, 255, 255, 0.616); 
+                border: 2px #E6E6E6 solid
+            }
+            .text{
+                width: 1248px; 
+                height: 0px; left: 96px; 
+                top: 149px; position: absolute; 
+                box-shadow: 2px 4px 4px rgba(255, 255, 255, 0.616); 
+                border: 2px #E6E6E6 solid
+            }
+
+            /* Nuevo estilo para el recuadro pequeño en el centro */
+            .recuadro-central {
+                width: 800px; 
+                height: 800px;  
+                left: 96px; 
+                top: 200px; 
+                position: absolute; 
+                background: #FAFAF5; 
+                border-radius: 24px; 
+                overflow: hidden; 
+                border: 2px #E6E6E6 solid;
+            }
+            .recuadro-derecha {
+                width: 700px; 
+                height: 900px; 
+                left: 96px; 
+                top: 240px; 
+                left:1120px;
+                position: absolute; 
+                background: #FAFAF5; 
+                border-radius: 24px; 
+                overflow: hidden; 
+                border: 2px #E6E6E6 solid;
+            }
+            p{
+                margin-left: 30px;
+                font-size: 20px;
+            }
+            button{
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                /* Tamaño del botón */
+                width: 150px;
+                height: 50px;
+            }
+            button:hover{
+
+                background-color: aquamarine;
+            }
+            input[type="number"] {
+                padding: 10px 20px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                margin: 5px;
+            }
+            footer{
+                margin-top: 1300px;
+                background-color: #252424;
+                position: absolute;
+                bottom: 0 px;
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+            footer p{
+                text-align: left;
+                margin-left: 5.5cm;
+                color: #ffffff;
+                margin-top: -1.3cm;
+            }
+            .copy{
+                position: relative;
+                width: 60px;
+                height: 40px;
+                left: 10px;
+                top: -22px;
+            }
+            .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            }
+            .fa-instagram {
+            color: white;
+            }
+            .fa-google {
+            color: white;
+            }
+            .contactos{
+                display: inline-block;
+                margin-left: 80px;
+                justify-content: space-around;
+                margin-left: -45cm;
+            }
+            .links{
+                display:  flex;
+                margin-top: 30px;
+                align-items: center;
+                width: 100%;
+                justify-content: space-around;
+            }
+            .links a{
+                color: #E6E6E6;
+                text-decoration: none;
+                font-family:'Times New Roman', Times, serif; 
+                font-size: large;
+            }
+            .recuadro{
+                animation: animacion 2s infinite;
+                padding: 8px 15px; 
+                border: solid rgb(0, 0, 0); 
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navegacion">
+            <a href="PAGINICIAL.html"><div style=left:96px; top: 41px; position: absolute; color: #ffffff; font-size: 32px; font-family: Newsreader; font-weight: 500; line-height: 32px;"></div>
+            <a href="TIEND.html"><div style="left: 38cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">Tienda🛍️</div>
+            <a href="UBICACION.html"><div style="left: 40cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">Ubicacion📍</div>
+            <a href="ABOUT.html"><div style="left: 42.5cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">About⏎</div>
+            <a href="CONTACTO.html"><div style="left: 44.5cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">Contacto📞</div>
+            <div style="padding-left: 23px; padding-right: 23px; padding-top: 13.50px; padding-bottom: 13.50px; left:47cm; top: 32px; position: absolute; background: #000000; border-radius: 4px; overflow: hidden; justify-content: center; align-items: center; display: inline-flex">
+                <div style="text-align: center; color: rgb(0, 0, 0); font-size: 16px; font-family: Inter; font-weight: 600; line-height: 20.80px;"></div>
+            </div>
+        </div>
+        <div class="titulo">
+            <div style="left: 96px; top: 70px; position: absolute; color: rgb(255, 255, 255); font-size: 64px; font-family: Newsreader; font-weight: 400;">Productos</div>
+            <div class="linia"></div>
+            <div class="recuadro-central">
+                <center>
+                    <img src="https://v9t7k9q5.rocketcdn.me/wp-content/uploads/2021/08/samsung-galaxy-s-20-FE-5g-128gb-cloud-navy-0.png" style="height:800px ;width:800px;">
+
+                </center>
+               
+            </div>
+            <!-- Recuadro pequeño en el centro -->
+        </div>
+        <div class="recuadro-derecha" style="font-size:24px">
+            <center>
+               <h1>Samsung Galaxy S20</h1>
+               <hr>
+               <h4><u>GALAXY S20 FE 5G 6GB/128GB AZUL SAMSUNG, Azul, 128 GB, 6,00 GB, 6,5 ", Full HD+, Snapdragon 4500,0 mAhmAh</u> </h4>
+               
+
+            </center>
+            <p>Tamaño Pantalla (cm/pulg.)= <strong> 16.5 cm / 6.5 Zoll</strong></p>
+            <p >Capacidad memoria= <strong>128 GB</strong></p>
+            <p>Procesador= <strong>Snapdragon</strong></p>
+            <p>El nuevo Samsung Galaxy S20 FE es uno de los mejores smartphones del momento. Con una pantalla Infinity-O de 6,5 pulgadas, 6 GB de RAM y 128 GB de memoria interna ampliable, es un dispositivo muy potente. La batería de 4500 mAh le permite tener una buena autonomía y la carga rápida es una gran ventaja. El color azul es muy bonito y el diseño general del móvil es muy atractivo.</p>
+            <br>
+            <br>
+            <br>
+           
+            <center>
+                <h3 style="color: rgb(255, 0, 0);font-family:Arial, Helvetica, sans-serif"> <i>491,99€</i> <s><i style="color: black;">510€</i></s></h3>
+                <input type="number" value="0" min="0" max="9"><a href="pago.html"> <button>Comprar</button></a>
+            </center>
+       
+        </div>
+        <footer>
+        
+            <div class="contactos">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="mailto:" class="fa fa-google"></a>
+            </div>
+            <p>+34 631-343-235</p>
+            <div class="links">
+                <div class="recuadro">
+                    <a href="avisolegal.html"style="color: black;" >Aviso legal</a> 
+                </div>
+                <div class="recuadro" >
+                    <a href="CONTACTO.html" style="color: black;">Contacto</a>
+                </div>
+    
+                <div class="">
+                    <img src="AIAR-modified.png" style="width: 100px; height: 100px;">
+                </div>
+    
+                <div class="recuadro" >
+                    <a href="ABOUT.html" style="color: black;">About</a>
+                </div>
+                
+                <div class="recuadro">
+                    <a href="" style="color: black;">Mapa Web</a>
+                </div>
+    
+            </div>
+            <div class="copy">
+                <img src="https://static.vecteezy.com/system/resources/previews/018/720/934/original/copyright-symbol-icon-on-transparent-background-free-png.png" style="height: 60px; position: relative;">
+            </div>
+        </footer>
+    </body>
+</html>

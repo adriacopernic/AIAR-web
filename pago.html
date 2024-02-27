@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            @keyframes animacion{
+                0%{
+                    background-color: rgb(243, 241, 241);
+                    transform: translateY(0);
+                }
+                50%{
+                    background-color: rgb(255, 255, 255);
+                    transform: translateY(-10px);
+                }
+                100%{
+                    background-color: rgb(246, 246, 246);
+                    transform: translateY(0);
+                }
+            }
+            body{
+                background-color: black;
+                margin: 0; /* Añadir margen 0 para evitar espacios en blanco alrededor del cuerpo de la página */
+            }
+            body{
+                background-color: black;
+            }
+            .navegacion{
+                width: 100%;
+                height: 100%; 
+                position: relative;
+                display: flex;
+                background-color: black;
+            }
+            .fondo_pago{
+                background: linear-gradient(180deg, #9e9dd7 0%, rgba(88.40, 221, 141.44, 0) 100%); box-shadow: 5px 5px 5px rgba(251.81, 251.81, 251.81, 0.25);
+                width: 100%; 
+                height: 690px; 
+                border-radius: 25px;
+                margin-top:4cm;
+                margin-left: -3.5cm;
+                margin-right: 0.5cm;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+            .pago{
+                background: linear-gradient(180deg, #4542D1 0%, rgba(88.40, 221, 141.44, 0) 100%); box-shadow: 5px 5px 5px rgba(251.81, 251.81, 251.81, 0.25);
+                width: 579px; 
+                height: 550px; 
+                border-radius: 25px;
+            }
+            h1{
+                color: #ffffff;
+                text-align: center;
+                
+            }
+            form{
+                margin-left: 2.5cm;
+                margin-top: 1cm;
+                justify-content: space-around;
+            }
+            input[type="text"]{
+                font-size: 1em;
+                padding: 0.25em;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                width: 10cm;
+                box-shadow: 3px 5px 9px rgba(251.81, 251.81, 251.81, 0.25)
+            }
+            input[type="date"]{
+                font-family: 'Arial', sans-serif;
+                font-size: 1em;
+                padding: 0.25em;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-shadow: 3px 5px 9px rgba(251.81, 251.81, 251.81, 0.25)
+            }
+            input[type="submit"]{
+                background-color: #4CAF50;
+                color: white;
+                padding: 8px 20px;
+                margin:8px o;
+                cursor: pointer;
+                font-size: 12pt;
+                border-radius: 6px;
+                border: 3px 2px white;
+                box-shadow: 3px 5px 9px rgba(106, 249, 10, 0.287);
+                margin-left: 30%;
+                margin-top: 0.5cm;
+            }
+            input[type="submit"]:hover{
+                background-color: #45a049;
+                box-shadow: 3px 5px 9px rgba(106, 181, 57, 0.287);
+            }
+            label{
+                color: #ffffff;
+                font-family: 'Arial', sans-serif;
+                display: inline-block;
+                width: 9em;
+            }
+            footer{
+                margin-top: 1300px;
+                background-color: #252424;
+                position: absolute;
+                bottom: 0 px;
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+            footer p{
+                text-align: left;
+                margin-left: 5.5cm;
+                color: #ffffff;
+                margin-top: -1.3cm;
+            }
+            .copy{
+                position: relative;
+                width: 60px;
+                height: 40px;
+                left: 10px;
+                top: -22px;
+            }
+            .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            }
+            .fa-instagram {
+            color: white;
+            }
+            .fa-google {
+            color: white;
+            }
+            .contactos{
+                display: inline-block;
+                margin-left: 80px;
+                justify-content: space-around;
+                margin-left: -45cm;
+            }
+            .links{
+                display:  flex;
+                margin-top: 30px;
+                align-items: center;
+                width: 100%;
+                justify-content: space-around;
+            }
+            .links a{
+                color: #E6E6E6;
+                text-decoration: none;
+                font-family:'Times New Roman', Times, serif; 
+                font-size: large;
+            }
+            .recuadro{
+                animation: animacion 2s infinite;
+                padding: 8px 15px; 
+                border: solid rgb(0, 0, 0); 
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navegacion">
+            <a href="PAGINICIAL.html"><img src="AIAR-modified (1).png" style="width: 150px; height: 150px; margin-top: -20px;"></a>
+            <a href="TIEND.html"><div style="left: 38cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">Tienda🛍️</div></a>
+            <a href="UBICACION.html"><div style="left: 40cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">Ubicacion📍</div></a>
+            <a href="ABOUT.html"><div style="left: 42.5cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">About⏎</div></a>
+            <a href="avisolegal.html"><div style="left: 35cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">Aviso Legal❕</div></a>
+            <a href="CONTACTO.html"><div style="left: 44.5cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">Contacto📞</div></a>
+            <div style="padding-left: 23px; padding-right: 23px; padding-top: 13.50px; padding-bottom: 13.50px; left:47cm; top: 32px; position: absolute; background: #000000; border-radius: 4px; overflow: hidden; justify-content: center; align-items: center; display: inline-flex">
+            <div style="text-align: center; color: rgb(0, 0, 0); font-size: 16px; font-family: Inter; font-weight: 600; line-height: 20.80px;">
+            </div>
+        </div>
+        
+        <div class="fondo_pago">
+            <div class="pago">
+                <div style="display: flex; justify-content: space-around;">
+                    <img style="width: 70px; height: 70px" src="american-express.png">
+                    <img style="width: 70px; height: 70px" src="bitcoin.png">
+                    <img style="width: 70px; height: 70px" src="paypal.png">
+                    <img style="width: 70px; height: 70px" src="tarjeta.png">
+                    <img style="width: 70px; height: 70px" src="visa.png">
+                </div>
+                <img style="width:70px ;height:70px; margin-left: 44%; margin-top: 0.5cm;" src="AIAR-modified (1).png">
+                <h1>PAYMENTS</h1>
+                <form action="pago">
+                    <label for="Nombre">Nombre del titular:</label><br>
+                    <input type="text" id="nombre" placeholder="Adria Salaña Rouaz" required><br><br>
+                
+                    <label for="Tarjeta">Numero de tarjeta:</label><br>
+                    <input type="text" id="numero" placeholder="NNNN-NNNN-NNNN-NNNN" required><br><br>
+
+                    <label for="Fecha">Fecha de Vencimiento:</label><label style="margin-left: 4.1cm;" for="CVV">CVV:</label><br>
+                    <input type="date">
+                    <input style="margin-left: 4cm ;width: 1cm;" type="text" id="cvv" placeholder="CVV"><br><br>
+                    
+                    <input type="submit" value="Pagar"><br><br>
+                </form>  
+                
+                </form>
+            </div>
+        </div>
+        <footer>
+        
+            <div class="contactos">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="mailto:" class="fa fa-google"></a>
+            </div>
+            <p>+34 631-343-235</p>
+            <div class="links">
+                <div class="recuadro">
+                    <a href="avisolegal.html"style="color: black;" >Aviso legal</a> 
+                </div>
+                <div class="recuadro" >
+                    <a href="CONTACTO.html" style="color: black;">Contacto</a>
+                </div>
+    
+                <div class="">
+                    <img src="AIAR-modified.png" style="width: 100px; height: 100px;">
+                </div>
+    
+                <div class="recuadro" >
+                    <a href="ABOUT.html" style="color: black;">About</a>
+                </div>
+                
+                <div class="recuadro">
+                    <a href="" style="color: black;">Mapa Web</a>
+                </div>
+    
+            </div>
+            <div class="copy">
+                <img src="https://static.vecteezy.com/system/resources/previews/018/720/934/original/copyright-symbol-icon-on-transparent-background-free-png.png" style="height: 60px; position: relative;">
+            </div>
+        </footer>
+
+    </body>
+</html>
+

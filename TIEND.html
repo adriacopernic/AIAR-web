@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            @keyframes animacion{
+                0%{
+                    background-color: rgb(243, 241, 241);
+                    transform: translateY(0);
+                }
+                50%{
+                    background-color: rgb(255, 255, 255);
+                    transform: translateY(-10px);
+                }
+                100%{
+                    background-color: rgb(246, 246, 246);
+                    transform: translateY(0);
+                }
+            }
+            body{
+                background-color: black;
+            }
+            .navegacion{
+                width: 100%;
+                height: 100%; 
+                position: relative;
+                display: flex;
+            }
+            .titulo{
+                width: 100%; 
+                height: 100%; 
+                position: relative; 
+                background: white;
+                margin-top: 1cm ;
+            }
+            .linia{
+                width: 1248px; 
+                height: 0px; left: 96px; 
+                top: 149px; position: absolute; 
+                box-shadow: 2px 4px 4px rgba(255, 255, 255, 0.616); 
+                border: 2px #E6E6E6 solid
+            }
+            .producto1{
+                width: 395px; 
+                height: 444px; 
+                left: 96px; 
+                top: 301px; 
+                position: absolute; 
+                background: #FAFAF5; 
+                border-radius: 24px; 
+                overflow: hidden; 
+                border: 2px #929292 solid;
+            }
+                .producto1:hover{
+                    background-color: rgb(210, 210, 212);
+            }
+
+            .producto2{
+                width: 395px; 
+                height: 444px; 
+                left: 523px; 
+                top: 301px; 
+                position: absolute; 
+                background: #FAFAF5; 
+                border-radius: 24px; 
+                overflow: hidden; 
+                border: 2px #929292 solid;
+            }
+
+            .producto2:hover{
+                background-color: rgb(210, 210, 212);
+            }
+
+            .producto3{
+                width: 395px; 
+                height: 444px; 
+                left: 950px; 
+                top: 301px; 
+                position: absolute; 
+                background: #FAFAF5; 
+                border-radius: 24px; 
+                overflow: hidden; 
+                border: 2px #929292 solid;
+            }
+
+            .producto3:hover{
+                background-color: rgb(210, 210, 212);
+            }
+
+            .nombre_producto{
+                left: 24px; 
+                top: 320px; 
+                position: absolute; 
+                color: black; 
+                font-size: 20px; 
+                font-family: Inter; 
+                font-weight: 600; 
+                line-height: 26px;
+            }
+            .precio_producto{
+                left: 24px; 
+                top: 350px; 
+                position: absolute; 
+                color: #426B1F; 
+                font-size: 20px; 
+                font-family: Inter; 
+                font-weight: 600; 
+                line-height: 26px;
+            }
+            .imagen_producto{
+                width: 335px; 
+                height: 296px; 
+                left: 30px; 
+                top: 0px; 
+                position: absolute;
+            }
+            .añadir{
+                margin-top: 10cm;
+                margin-left: 20%;
+                margin-right: 20%;
+                padding-top: 4px; 
+                padding-bottom: 4px; 
+                padding-left: 16px; 
+                padding-right: 16px; 
+                border-radius: 20px; 
+                background: linear-gradient(180deg, #000000 0%, #306485 49%, #474745 50%, #ff990080 100%);
+                background-size: 1px 100px;
+                transition: all .3s;
+                text-align: center;
+            }
+            .añadir:hover{
+                background-position: 0 -50px;
+                transition: all .3s;
+                text-align: center;
+                background: linear-gradient(180deg, #000000 0%, #306485 49%, #474745 50%, #ff990080 100%);
+            }
+            .paginas{
+                margin-top: 10cm;
+                margin-left: 20%;
+                margin-right: 20%;
+                padding-top: 4px; 
+                padding-bottom: 4px; 
+                padding-left: 16px; 
+                padding-right: 16px; 
+                border-radius: 20px; 
+                background: linear-gradient(180deg, #000000 0%, #306485 49%, #474745 50%, #ff990080 100%);
+            }
+            footer{
+                margin-top: 3500px;
+                background-color: #252424;
+                position: absolute;
+                bottom: 0 px;
+                width: 100%;
+                height: auto;
+                text-align: center;
+            }
+            footer p{
+                text-align: left;
+                margin-left: 6cm;
+                color: #ffffff;
+                margin-top: -1.3cm;
+            }
+            .copy{
+                position: relative;
+                width: 60px;
+                height: 40px;
+                left: 10px;
+                top: -22px;
+            }
+            .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            }
+            .fa-instagram {
+            color: white;
+            }
+            .fa-google {
+            color: white;
+            }
+            .contactos{
+                display: inline-block;
+                margin-left: 80px;
+                justify-content: space-around;
+                margin-left: -45cm;
+            }
+            .links{
+                display:  flex;
+                margin-top: 30px;
+                align-items: center;
+                width: 100%;
+                justify-content: space-around;
+            }
+            .links a{
+                color: #E6E6E6;
+                text-decoration: none;
+                font-family:'Times New Roman', Times, serif; 
+                font-size: large;
+            }
+            .recuadro{
+                animation: animacion 2s infinite;
+                padding: 8px 15px; 
+                border: solid rgb(0, 0, 0); 
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navegacion">
+            <a href="PAGINICIAL.html"><img src="AIAR-modified (1).png" style="width: 150px; height: 150px; margin-top: -20px;"></a>
+            <a href="TIEND.html"><div style="left: 38cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">Tienda🛍️</div></a>
+            <a href="UBICACION.html"><div style="left: 40cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">Ubicacion📍</div></a>
+            <a href="ABOUT.html"><div style="left: 42.5cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">About⏎</div></a>
+            <a href="avisolegal.html"><div style="left: 35cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">Aviso Legal❕</div></a>
+            <a href="CONTACTO.html"><div style="left: 44.5cm; top: 45.50px; position: absolute; text-align: center; color: rgb(255, 255, 255); font-size: 16px; font-family: Inter; font-weight: 400; line-height: 20.80px;">Contacto📞</div></a>
+            <div style="padding-left: 23px; padding-right: 23px; padding-top: 13.50px; padding-bottom: 13.50px; left:47cm; top: 32px; position: absolute; background: #000000; border-radius: 4px; overflow: hidden; justify-content: center; align-items: center; display: inline-flex">
+            <div style="text-align: center; color: rgb(0, 0, 0); font-size: 16px; font-family: Inter; font-weight: 600; line-height: 20.80px;">
+            </div>
+        </div>
+    
+        <!--Smartphones-->    
+
+        <div class="titulo">
+            <div style="left: 96px; top: 70px; position: absolute; color: rgb(255, 255, 255); font-size: 64px; font-family: Newsreader; font-weight: 400;">Productos</div>                
+            <div class="productos"></div>
+                <div class="linia"></div>
+                <div style="left: 96px; top: 210px; position: absolute; color: rgb(255, 255, 255); font-size: 40px; font-family: Newsreader; font-weight: 400;">Smartphones</div>
+                
+            <div class="producto1">
+                <a href="Iphone15.html"></a><div class="nombre_producto">IPHONE 15 PRO MAX 256GB</div>
+                <div class="precio_producto"></div>
+                <a href="Iphone15.html"><img class="imagen_producto" src="https://cablemel.es/wp-content/uploads/2023/09/iphoneProMax.png" />
+                <div class="añadir">
+                    <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+                </div>
+            </div>
+            
+            <div class="producto2">
+               <a href="galaxy_s24.html"><div class="nombre_producto">Galaxy S24 Ultra 512Gb Negro Titanium</div>
+                <div class="precio_producto"></div>
+                <a href="galaxy_s24.html"><img class="imagen_producto" src="https://www.wivai.com/on/demandware.static/-/Sites-promocaixa-m-catalog/default/dw2bbcc51f/telefonia/S24/121-4006624_01_600x600_small.png" />
+                <div class="añadir">
+                    <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+                </div>
+            </div>
+         
+            <div class="producto3">
+                <a href="Iphone11.html"><div class="nombre_producto">iPhone 11 Pro Max 64GB </div>
+                <div class="precio_producto"></div>
+                <a href="Iphone11.html"><img class="imagen_producto" src="https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-11-pro-max-silver-back.png?v=42" />
+                <div class="añadir">
+                    <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+                </div>
+            </div>
+
+            <div class="producto1" style="top: 768px;">
+                <a href="Xiaomi_note10.html"><div class="nombre_producto">Xiaomi Redmi Note 10 Pro 128 GB</div>
+                <div class="precio_producto"></div>
+                <a href="Xiaomi_note10.html"><img class="imagen_producto" src="https://www.tu.com/cdn/shop/products/02_XIAOMI_91106_A_1200x1200.png?v=1683894520" />
+                <div class="añadir">
+                    <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+                </div>
+            </div>
+
+            <div class="producto2" style="top: 768px;">
+                <a href="iPhone_xr.html"><div class="nombre_producto">iPhone XR 128 GB en negro </div>
+                <div class="precio_producto"></div>
+                <a href="iPhone_xr.html"><img class="imagen_producto" src="https://www.barcimaster.com/wp-content/uploads/2020/10/iphone-xr-black-select-201809.png" />
+                <div class="añadir">
+                    <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+                </div>
+            </div>
+
+            <div class="producto3" style="top: 768px;">
+                <a href="galaxy_s20.html"><div class="nombre_producto">Samsung Galaxy S20 FE 5G 6/128GB</div>
+                <div class="precio_producto"></div>
+                <a href="galaxy_s20.html"><img class="imagen_producto" src="https://v9t7k9q5.rocketcdn.me/wp-content/uploads/2021/08/samsung-galaxy-s-20-FE-5g-128gb-cloud-navy-0.png" />
+                <div class="añadir">
+                    <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+                </div>
+            </div>
+            
+            <!--graficas-->
+
+            <div style="left: 96px; top: 1250px; position: absolute; color: rgb(255, 255, 255); font-size: 40px; font-family: Newsreader; font-weight: 400;">Graficas</div>
+            
+            <div class="producto1" style="top: 1318px;">
+                <a href="Asus_dual.html"><div class="nombre_producto">ASUS Dual GeForce RTX 4060 Ti OC Edition 8GB GDDR6 DLSS3</div>
+                <div class="precio_producto"></div>
+                <a href="Asus_dual.html"><img class="imagen_producto" src="https://media.lifeinformatica.com/cdn-cgi/image/quality=50,format=webp/contents/Life/ASUS-90YV0J40-M0NA00/imgs/90YV0J40-M0NA00-01.png" />
+                <div class="añadir">
+                  <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+                </div>
+            </div>
+            
+            <div class="producto2"style="top: 1318px;">
+                <a href="PoweColor.html"> <div class="nombre_producto">PowerColor Fighter AMD Radeon RX 6650 XT 8GB GDDR6</div>
+                <div class="precio_producto"></div>
+                <a href="PoweColor.html"><img class="imagen_producto" src="https://www.powercolor.com/_upload/images//2204201435380.png" />
+                <div class="añadir">
+                <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+                </div>
+            </div>
+         
+            <div class="producto3"style="top: 1318px;">
+                <a href="MSI_GeForce_RTX.html"><div class="nombre_producto">MSI GeForce RTX 3060 VENTUS 2X OC LHR 12GB GDDR6</div>
+                <div class="precio_producto"></div>
+                <a href="MSI_GeForce_RTX.html"><img class="imagen_producto" src="https://asset.msi.com/resize/image/global/product/product_1610443907b48feb29b4a49834f4b19e35c5511db6.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png" />
+                <div class="añadir">
+               <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+                </div>
+            </div>
+
+            <div class="producto1" style="top: 1790px;">
+                <a href="MSI_GeForce_GTX.html"><div class="nombre_producto">MSI GeForce GTX 1650 D6 VENTUS XS OC 4GB GDDR6</div>
+                <div class="precio_producto"></div>
+                <a href="MSI_GeForce_GTX.html"> <img class="imagen_producto" src="https://asset.msi.com/resize/image/global/product/product_8_20200317155243_5e7081cb9206e.png62405b38c58fe0f07fcef2367d8a9ba1/600.png" />
+                <div class="añadir">
+                <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+                </div>
+            </div>
+
+            <div class="producto2" style="top: 1790px;">
+                <a href="MSI_GeForce_GTX.html"><div class="nombre_producto">Gigabyte Radeon RX 7900 XTX GAMING OC 24GB GDDR6</div>
+                <div class="precio_producto"></div>
+                <a href="MSI_GeForce_GTX.html"><img class="imagen_producto" src="https://static.gigabyte.com/StaticFile/Image/Global/df68c5863e046427671d3cf6d9a4d6e4/Product/32888/Png" />
+                <div class="añadir">
+                <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+                </div>
+            </div>
+
+            <div class="producto3" style="top: 1790px;">
+                <a href="MSI_radeon.html"><div class="nombre_producto">MSI Radeon™ RX 7600 MECH 2X CLASSIC 8G</div></a>
+                <div class="precio_producto"></div>
+                <a href="MSI_radeon.html"><img class="imagen_producto" src="https://asset.msi.com/resize/image/global/product/product_1684986692064288b1ee49f8ee3c61dbbb4e3f7cff.png62405b38c58fe0f07fcef2367d8a9ba1/400.png" /></a>
+                <div class="añadir">
+                <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+                </div>
+            </div>
+
+        <!--CPU's-->
+        <div style="left: 96px; top: 2280px; position: absolute; color: rgb(255, 255, 255); font-size: 40px; font-family: Newsreader; font-weight: 400;">CPU's</div>
+            
+        <div class="producto1" style="top: 2348px;">
+            <a href="AMD_Ryzen7.html"><div class="nombre_producto">AMD Ryzen 7 7800X3D 4.2 GHz/5 GHz</div>
+            <div class="precio_producto"></div>
+            <a href="AMD_Ryzen7.html"><img class="imagen_producto" style="width: 500px; margin-left: -70px;" src="https://www.amd.com/system/files/2022-12/1728141-amd-ryzen-3d-vcache-7-right-1260x709.png" />
+            <div class="añadir">
+            <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+            </div>
+        </div>
+        
+        <div class="producto2"style="top: 2348px;">
+            <a href="AMD_Rayzen5.html"><div class="nombre_producto">AMD Ryzen 5 5500 3.6GHz Box</div>
+            <div class="precio_producto"></div>
+            <a href="AMD_Rayzen5.html"><img class="imagen_producto" style="left:-80px; top:-120px; width: 600px; height: 600px;" src="https://hardwareonline.com/47749-thickbox_default/amd-ryzen-5-5500-36ghz-box-b.jpg" />
+            <div class="añadir">
+            <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+            </div>
+        </div>
+     
+        <div class="producto3"style="top: 2348px;">
+            <a href="AMD_9.html"><div class="nombre_producto">AMD Ryzen 9 7950X 4.5 GHz</div></a>
+            <div class="precio_producto"></div>
+            <a href="AMD_9.html"><img class="imagen_producto" src="https://img.pccomponentes.com/articles/1057/10570015/2730-amd-ryzen-9-7950x-45-ghz-box-sin-ventilador-mejor-precio.jpg" /></a>
+            <div class="añadir">
+                <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+            </div>
+        </div>
+
+        <div class="producto1" style="top: 2820px;">
+            <a href="Intel_i7.html"><div class="nombre_producto">Intel Core i7-13700K 3.4 GHz Box</div></a>
+            <div class="precio_producto"></div>
+            <a href="Intel_i7.html"><img class="imagen_producto" src="https://media.ldlc.com/r1600/ld/products/00/05/98/22/LD0005982255.jpg" /></a>
+            <div class="añadir">
+                <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+            </div>
+        </div>
+
+        <div class="producto2" style="top: 2820px;">
+            <a href="Intel _Core_i5.html"><div class="nombre_producto">Intel Core i5-13600K 3.5 GHz Box</div></a>
+            <div class="precio_producto"></div>
+            <a href="Intel _Core_i5.html"><img class="imagen_producto" src="https://img.pccomponentes.com/articles/1057/10573130/1723-intel-core-i5-13600k-35-ghz-box.jpg" /></a>
+            <div class="añadir">
+            <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+            </div>
+        </div>
+
+        <div class="producto3" style="top: 2820px;">
+            <a href="Intel_Core_i3.html"><div class="nombre_producto">Intel Core i3-12100F 3.3 GHz</div></a>
+            <div class="precio_producto"></div>
+            <a href="Intel_Core_i3.html"><img class="imagen_producto" src="https://img.pccomponentes.com/articles/83/834926/3316-intel-core-i3-12100f-43-ghz-mejor-precio.jpg" /></a>
+            <div class="añadir">
+             
+            <a href="pago.html" style="text-decoration: none; color:white;" href="">Comprar</a>
+            </div>
+        </div>
+       
+        <footer>
+        
+            <div class="contactos">
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="mailto:" class="fa fa-google"></a>
+            </div>
+            <p>+34 631-343-235</p>
+            <div class="links">
+                <div class="recuadro">
+                    <a href="avisolegal.html"style="color: black;" >Aviso legal</a> 
+                </div>
+                <div class="recuadro" >
+                    <a href="CONTACTO.html" style="color: black;">Contacto</a>
+                </div>
+    
+                <div class="">
+                    <img src="AIAR-modified.png" style="width: 100px; height: 100px;">
+                </div>
+    
+                <div class="recuadro" >
+                    <a href="ABOUT.html" style="color: black;">About</a>
+                </div>
+                
+                <div class="recuadro">
+                    <a href="" style="color: black;">Mapa Web</a>
+                </div>
+    
+            </div>
+            <div class="copy">
+                <img src="https://static.vecteezy.com/system/resources/previews/018/720/934/original/copyright-symbol-icon-on-transparent-background-free-png.png" style="height: 60px; position: relative;">
+            </div>
+        </footer>
+    </body>
+</html>
